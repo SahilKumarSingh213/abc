@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6326","Unauthenticated user opening Deals and Invoices is redirected to login","","2026-09-15","passed","2026-09-15","","","",""
+"","11531","Authenticated user navigates between Deals and Invoices and stays authenticated after refresh","","2026-09-15","passed","2026-09-15","","","",""
+"","6038","Valid user can sign in and clear transient overlays","","2026-09-15","passed","2026-09-15","","","",""
+"","9296","Deals page renders its primary controls and remains usable in the observed state","","2026-09-15","passed","2026-09-15","","","",""
