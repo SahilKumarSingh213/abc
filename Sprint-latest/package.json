@@ -1,0 +1,33 @@
+{
+  "name": "sprint",
+  "version": "1.0.0",
+  "description": "FreeCRM BDD Playwright Test Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js && allure generate allure-results -o allure-report --clean",
+    "test:headed": "node -e \"process.env.HEADLESS='false'; require('child_process').execSync('npx cucumber-js && npx allure generate allure-results -o allure-report --clean', {stdio:'inherit'})\"",
+    "test:headless": "node -e \"process.env.HEADLESS='true'; require('child_process').execSync('npx cucumber-js && npx allure generate allure-results -o allure-report --clean', {stdio:'inherit'})\"",
+    "test:multi-browser": "node -e \"const cp = require('child_process'); for (const b of ['chromium', 'firefox', 'webkit']) { console.log('=== Running on ' + b + ' ==='); process.env.BROWSER = b; try { cp.execSync('npx cucumber-js', {stdio: 'inherit'}); } catch(e){} } cp.execSync('npx allure generate allure-results -o allure-report --clean', {stdio: 'inherit'});\"",
+    "report:allure": "allure generate allure-results -o allure-report --clean",
+    "report:allure:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.1",
+    "allure-commandline": "^2.43.0",
+    "allure-cucumberjs": "^3.12.1",
+    "allure-playwright": "^3.12.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "yaml": "^2.9.1"
+  }
+}

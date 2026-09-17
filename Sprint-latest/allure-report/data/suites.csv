@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","10892","Valid deal is saved once and can be found again","","2026-09-17","passed","2026-09-17","","","",""
+"","9461","Authenticated user navigates between Deals and Invoices and stays authenticated after refresh","","2026-09-17","passed","2026-09-17","","","",""
+"","5476","Valid user can sign in and clear transient overlays","","2026-09-17","passed","2026-09-17","","","",""
+"","8655","Invalid deal submission is rejected","","2026-09-17","passed","2026-09-17","","","",""
